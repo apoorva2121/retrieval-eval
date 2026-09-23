@@ -1,0 +1,176 @@
+{
+  "scifact": {
+    "hybrid_wins_vs_bm25": 70,
+    "hybrid_ties": 206,
+    "hybrid_losses_vs_bm25": 24,
+    "dense_wins_vs_bm25": 70,
+    "most_improved_by_hybrid": [
+      {
+        "query": "Activator-inhibitor pairs are provided dorsally by Admpchordin.",
+        "BM25": 0.333,
+        "Dense": 1.0,
+        "Hybrid-RRF": 1.0
+      },
+      {
+        "query": "Bone marrow cells contribute to adult macrophage compartments.",
+        "BM25": 0.356,
+        "Dense": 1.0,
+        "Hybrid-RRF": 1.0
+      },
+      {
+        "query": "Deleting Raptor reduces G-CSF levels.",
+        "BM25": 0.356,
+        "Dense": 0.631,
+        "Hybrid-RRF": 1.0
+      },
+      {
+        "query": "In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",
+        "BM25": 0.0,
+        "Dense": 0.5,
+        "Hybrid-RRF": 0.631
+      },
+      {
+        "query": "Input from  mental and physical health care professionals is effective at decreasing homelessness.",
+        "BM25": 0.0,
+        "Dense": 0.431,
+        "Hybrid-RRF": 0.631
+      }
+    ],
+    "hurt_most_by_hybrid": [
+      {
+        "query": "Ivermectin is used to treat onchocerciasis.",
+        "BM25": 1.0,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.315
+      },
+      {
+        "query": "Venules have a thinner or absent smooth layer compared to arterioles.",
+        "BM25": 1.0,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.356
+      },
+      {
+        "query": "Insulin increases risk of severe kidney failure.",
+        "BM25": 1.0,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.356
+      },
+      {
+        "query": "De novo assembly of sequence data has more specific contigs than unassembled sequence data.",
+        "BM25": 0.631,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.0
+      },
+      {
+        "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+        "BM25": 0.631,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.0
+      }
+    ],
+    "unanswered_by_all": [
+      {
+        "query": "Ribosomopathies have a low degree of cell and tissue specific pathology."
+      },
+      {
+        "query": "Suboptimal nutrition is not predictive of chronic disease"
+      },
+      {
+        "query": "The PPR MDA5 has two N-terminal CARD domains."
+      },
+      {
+        "query": "The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins."
+      },
+      {
+        "query": "The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1."
+      }
+    ]
+  },
+  "nfcorpus": {
+    "hybrid_wins_vs_bm25": 123,
+    "hybrid_ties": 145,
+    "hybrid_losses_vs_bm25": 55,
+    "dense_wins_vs_bm25": 117,
+    "most_improved_by_hybrid": [
+      {
+        "query": "Vitamin C-Enriched Bacon",
+        "BM25": 0.0,
+        "Dense": 0.631,
+        "Hybrid-RRF": 0.631
+      },
+      {
+        "query": "Too Much Iodine Can Be as Bad as Too Little",
+        "BM25": 0.0,
+        "Dense": 0.553,
+        "Hybrid-RRF": 0.55
+      },
+      {
+        "query": "junk food",
+        "BM25": 0.379,
+        "Dense": 0.409,
+        "Hybrid-RRF": 0.792
+      },
+      {
+        "query": "Eggs and Arterial Function",
+        "BM25": 0.254,
+        "Dense": 0.698,
+        "Hybrid-RRF": 0.661
+      },
+      {
+        "query": "Is Milk Good for Our Bones?",
+        "BM25": 0.172,
+        "Dense": 0.688,
+        "Hybrid-RRF": 0.567
+      }
+    ],
+    "hurt_most_by_hybrid": [
+      {
+        "query": "kohlrabi",
+        "BM25": 1.0,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.387
+      },
+      {
+        "query": "Harvard Physicians\u2019 Study II",
+        "BM25": 0.459,
+        "Dense": 0.0,
+        "Hybrid-RRF": 0.0
+      },
+      {
+        "query": "pork",
+        "BM25": 0.931,
+        "Dense": 0.662,
+        "Hybrid-RRF": 0.538
+      },
+      {
+        "query": "Bowel Movement Frequency",
+        "BM25": 0.575,
+        "Dense": 0.121,
+        "Hybrid-RRF": 0.283
+      },
+      {
+        "query": "The Actual Benefit of Diet vs. Drugs",
+        "BM25": 0.58,
+        "Dense": 0.096,
+        "Hybrid-RRF": 0.31
+      }
+    ],
+    "unanswered_by_all": [
+      {
+        "query": "deafness"
+      },
+      {
+        "query": "dietary scoring"
+      },
+      {
+        "query": "Dr. Walter Willett"
+      },
+      {
+        "query": "eggnog"
+      },
+      {
+        "query": "energy drinks"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "summary": [
+    {
+      "retriever": "Hybrid-RRF",
+      "dataset": "scifact",
+      "ndcg@10": 0.6872457694528512,
+      "recall@100": 0.9570000000000001,
+      "n_queries": 300,
+      "published_bm25_ndcg10": 0.665
+    },
+    {
+      "retriever": "BM25",
+      "dataset": "scifact",
+      "ndcg@10": 0.6486765894358334,
+      "recall@100": 0.876388888888889,
+      "n_queries": 300,
+      "published_bm25_ndcg10": 0.665
+    },
+    {
+      "retriever": "Dense",
+      "dataset": "scifact",
+      "ndcg@10": 0.6450816521455776,
+      "recall@100": 0.925,
+      "n_queries": 300,
+      "published_bm25_ndcg10": 0.665
+    },
+    {
+      "retriever": "Hybrid-RRF",
+      "dataset": "nfcorpus",
+      "ndcg@10": 0.33609834417379475,
+      "recall@100": 0.3176215067254177,
+      "n_queries": 323,
+      "published_bm25_ndcg10": 0.325
+    },
+    {
+      "retriever": "Dense",
+      "dataset": "nfcorpus",
+      "ndcg@10": 0.31660184597575286,
+      "recall@100": 0.31150992401169303,
+      "n_queries": 323,
+      "published_bm25_ndcg10": 0.325
+    },
+    {
+      "retriever": "BM25",
+      "dataset": "nfcorpus",
+      "ndcg@10": 0.30605790332527083,
+      "recall@100": 0.2442571507770132,
+      "n_queries": 323,
+      "published_bm25_ndcg10": 0.325
+    }
+  ],
+  "runtime_seconds": 642.2,
+  "config": {
+    "paths": {
+      "data": "data",
+      "reports": "reports",
+      "cache": "artifacts"
+    },
+    "datasets": [
+      {
+        "name": "scifact",
+        "published_bm25_ndcg10": 0.665
+      },
+      {
+        "name": "nfcorpus",
+        "published_bm25_ndcg10": 0.325
+      }
+    ],
+    "retrievers": {
+      "bm25": {
+        "k1": 0.9,
+        "b": 0.4
+      },
+      "dense": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "batch_size": 64
+      },
+      "hybrid": {
+        "rrf_k": 60,
+        "dense_weight": 0.5
+      }
+    },
+    "eval": {
+      "k_ndcg": 10,
+      "k_recall": 100,
+      "candidate_depth": 100,
+      "n_examples": 5
+    }
+  }
+}
