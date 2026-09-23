@@ -1,0 +1,33 @@
+# retrieval-eval — BM25 vs dense vs hybrid on BEIR datasets, evaluated with
+# nDCG@10 / Recall@100 implemented from the BEIR/TREC definitions and validated
+# against the published BM25 numbers.
+
+paths:
+  data: data
+  reports: reports
+  cache: artifacts
+
+datasets:
+  # BEIR paper (Thakur et al., 2021) BM25 nDCG@10: SciFact 0.665, NFCorpus 0.325.
+  - name: scifact
+    published_bm25_ndcg10: 0.665
+  - name: nfcorpus
+    published_bm25_ndcg10: 0.325
+
+retrievers:
+  bm25:
+    k1: 0.9
+    b: 0.4
+  dense:
+    model: sentence-transformers/all-MiniLM-L6-v2   # 22M params, CPU-friendly
+    batch_size: 64
+  hybrid:
+    rrf_k: 60
+    dense_weight: 0.5
+
+eval:
+  k_ndcg: 10
+  k_recall: 100
+  candidate_depth: 100
+  # per-query analysis: how many hardest / most-improved queries to list
+  n_examples: 5

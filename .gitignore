@@ -1,0 +1,6 @@
+data/*.parquet
+artifacts/
+reports/per_query.csv
+__pycache__/
+*.pyc
+.pytest_cache/
