@@ -180,3 +180,7 @@ reports/summary.csv · analysis.json · results.json
 3. Cross-encoder reranking of the hybrid top-100 — measure nDCG gain vs latency.
 4. Connect to the LLM half (groundedness, relevance, coherence judged against
    human labels) — that repo exists as a scaffold and needs an API key.
+
+## Licence
+
+[MIT](LICENSE). The BEIR benchmarks are distributed by their respective authors under their own licences and are downloaded, not redistributed.
